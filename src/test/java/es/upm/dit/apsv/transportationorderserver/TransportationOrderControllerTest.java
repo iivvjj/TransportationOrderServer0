@@ -18,6 +18,8 @@ import java.util.ArrayList;
 
 import java.util.Arrays;
 
+import java.util.Collections;
+
 import java.util.List;
 
 import java.util.Optional;
@@ -134,7 +136,7 @@ public class TransportationOrderControllerTest {
 
                     .accept(MediaType.APPLICATION_JSON);
 
-            MvcResult resultNotFound = mockMvc.perform(requestNotFound)
+            MvcResult resultNotFoundd = mockMvc.perform(requestNotFound)
 
                     .andExpect(status().isNotFound()).andReturn();
 
